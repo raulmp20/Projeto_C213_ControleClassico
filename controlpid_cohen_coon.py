@@ -6,8 +6,8 @@ k=2.53
 tau=6.225
 Theta = 1.275 # atraso de propagação
 #parâmetros do controlador kp+kp/(Ti*s)+kp*Td*s
-kc=3.31
-Ti=2.978
+kc=2.67
+Ti=2.89
 Td=0.447
 
 print(kc)

@@ -3,12 +3,12 @@ import control as cnt
 import matplotlib.pyplot as plt
 #considerando uma função de transferencia em malha aberta FT=k/(tau*s+1)
 k=2.53
-tau=19.95
-Theta = 4.04 # atraso de propagação
+tau=6.225
+Theta = 1.275 # atraso de propagação
 #parâmetros do controlador kp+kp/(Ti*s)+kp*Td*s
-kc=2.694
-Ti=9.199
-Td=1.420
+kc=3.31
+Ti=2.978
+Td=0.447
 
 print(kc)
 print(Ti)

@@ -3,8 +3,8 @@ import control as cnt
 import matplotlib.pyplot as plt
 #considerando uma função de transferencia em malha aberta FT=k/(tau*s+1)
 k=2.533
-tau=19.89
-Theta = 4.06 # atraso de propagação
+tau=6.225
+Theta = 1.275 # atraso de propagação
 
 degrau = 15
 
@@ -19,7 +19,7 @@ Hs = cnt.series (H , H_pade)
 #Hmf = cnt.feedback(Hs, 1)
 
 t = np . linspace (0, 35, 100)
-(t , y ) = cnt.step_response ( Hs, t )
+(t , y ) = cnt.step_response ( Hs*15, t )
 #(t, y1) = cnt.step_response(Hmf, t)
 plt.plot (t , y )
 #plt.plot(t, y1)
